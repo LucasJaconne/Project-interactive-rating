@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsla(216, 12%, 54%, 0.123);
+    --DarkBlue: hsl(215, 22%, 15%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    background: var(--Very-Dark-Blue);
+    color: var(--White);
+    height: 100vh;
+    
+}
+
+main {
+    
+    min-width: 370px;
+    max-width: 400px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container1 img {
+    background: var(--MediumGrey);
+    padding: 14px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+#container1 {
+    background: var(--DarkBlue);
+    border-radius: 30px;
+    padding: 35px 30px;
+    
+}
+
+#título {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+#paragrafo1 {
+    width: 100%;
+}
+
+#paragrafo1 p{
+    padding-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.7em;
+    color: var(--LightGrey);
+    text-align: left;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+#buttons button {
+    height: 50px;
+    width: 50px;
+    border:none;
+    padding: 14px;
+    border-radius: 100%;
+    background:var(--MediumGrey);
+    color: var(--LightGrey);
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(68, 68, 68, 0.233);
+}
+
+
+#buttons button:hover {
+    background-color: var(--LightGrey);
+    color: var(--White);
+    transition: 0.4s ;
+}
+
+#button2 button{
+    display: flex;
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 30px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: var(--orange);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.103);
+}
+
+#button2 button:hover {
+    background-image: linear-gradient(to bottom, hsl(25, 97%, 53%), hsl(25, 84%, 41%));
+    transition: 0.4s;
+    
+}
+
+#container2 {
+    background: var(--DarkBlue);
+    border-radius: 30px;
+    padding: 35px 30px;
+    display: none;
+}
+
+#container2 img {
+    display: flex;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#selected {
+    margin: 35px 0px;
+}
+
+#p_selected {
+    color: hsl(25, 100%, 50%);
+    background: var(--MediumGrey);
+    padding: 10px;
+    width: fit-content;
+    /*Pelo que eu pvi, faz com que a largura fique de acordo com o conteúdo*/
+    margin: auto;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+#título2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#container2 p {
+    text-align:center;
+}
+
+#checked {
+    background: var(--orange) !important;
+    color:white  !important;
+}
