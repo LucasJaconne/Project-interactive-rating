@@ -73,9 +73,16 @@ main {
     padding-bottom: 30px;
 }
 
-#buttons button {
-    height: 50px;
-    width: 50px;
+ input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; 
+  }
+
+
+#buttons label {
+    height: 20px;
+    width: 20px;
     border:none;
     padding: 14px;
     border-radius: 100%;
@@ -89,11 +96,23 @@ main {
 }
 
 
-#buttons button:hover {
+#buttons label:hover {
     background-color: var(--LightGrey);
     color: var(--White);
     transition: 0.4s ;
 }
+
+ /* input:checked + p {
+    background-color: orange;
+    border-radius: 50%;
+    
+  } */
+
+
+#buttons label p {
+    padding-top: 3px;
+}
+
 
 #button2 button{
     display: flex;
@@ -113,8 +132,9 @@ main {
 }
 
 #button2 button:hover {
-    background-image: linear-gradient(to bottom, hsl(25, 97%, 53%), hsl(25, 84%, 41%));
+    background-color: var(--White);
     transition: 0.4s;
+    color: var(--orange);
     
 }
 
@@ -155,7 +175,7 @@ main {
     text-align:center;
 }
 
-#checked {
-    background: var(--orange) !important;
-    color:white  !important;
+#paragrafo2 {
+    line-height: 1.7em;
 }
+

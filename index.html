@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body onload="carregar()">
 
   <!-- Rating state start -->
 
@@ -29,13 +29,30 @@
           to help us improve our offering!
         </p>
       </div>
+      
       <div id="buttons">
-        <button id="b1">1</button> 
-        <button id="b2">2</button>
-        <button id="b3">3</button>
-        <button id="b4">4</button>
-        <button id="b5">5</button>
-      </div>
+  <label id="b1" for="i1">
+    <input type="radio" name="radio" value="1" id="i1" onchange="mudarCor('b1')" />
+    <p><strong>1</strong></p>
+  </label>
+  <label id="b2" for="i2">
+    <input type="radio" name="radio" value="2" id="i2" onchange="mudarCor('b2')" />
+    <p><strong>2</strong></p>
+  </label>
+  <label id="b3" for="i3">
+    <input type="radio" name="radio" value="3" id="i3" onchange="mudarCor('b3')" />
+    <p><strong>3</strong></p>
+  </label>
+  <label id="b4" for="i4">
+    <input type="radio" name="radio" value="4" id="i4" onchange="mudarCor('b4')" />
+    <p><strong>4</strong></p>
+  </label>
+  <label id="b5" for="i5">
+    <input type="radio" name="radio" value="5" id="i5" onchange="mudarCor('b5')" />
+    <p><strong>5</strong></p>
+  </label>
+</div>
+
       <div id="button2">
         <button>Submit</button>
       </div>
